@@ -60,3 +60,6 @@ def delete(request, task_id):
 
     task.delete()
     return redirect(index)
+
+def about(request):
+    return render(request, 'todo/about.html')
